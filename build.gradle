@@ -1,0 +1,17 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+
+dependencies {
+    compile ('org.apache.commons:commons-lang3:3.11')
+    compile ('org.json:json:20140107')
+    
+    testImplementation ('junit:junit:4.12')
+	testImplementation ('org.powermock:powermock-module-junit4:2.0.7')
+	testImplementation ('org.powermock:powermock-api-mockito2:2.0.7')
+	testImplementation ('org.powermock:powermock-core:2.0.7')
+}
+
+repositories {
+  jcenter()
+}
